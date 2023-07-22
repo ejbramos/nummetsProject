@@ -92,3 +92,20 @@ disp(['Convergence achieved.']);
 disp(['Final values:']);
 disp(['x1 = ', num2str(x1)]);
 disp(['x2 = ', num2str(x2)]);
+
+
+% Plotting x1
+figure;
+plot(1:iteration, x1_values, 'b-o', 'LineWidth', 2);
+grid on;
+xlabel('Iteration');
+ylabel('x1 Value');
+title('Convergence of x1');
+
+% Plotting x2
+figure;
+plot(1:iteration, x2_values, 'r-o', 'LineWidth', 2);
+grid on;
+xlabel('Iteration');
+ylabel('x2 Value');
+title('Convergence of x2');
